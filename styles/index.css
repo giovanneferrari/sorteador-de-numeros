@@ -1,0 +1,83 @@
+@import url(/styles/global.css);
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    padding-inline: 13.4rem;
+    background: url(../img/bg.png) var(--background-primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+body > svg {
+    margin-top: 7.6rem;
+    margin-bottom: 8.9rem;
+}
+
+main {
+    display: flex;
+    gap: 10.8rem;
+    text-align: center;
+
+    .left-info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 3.8rem;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            width: 90%;
+
+            p {
+                font: var(--overline);
+                text-transform: uppercase;
+                background: var(--gradient-content);
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+
+            h1 {
+                font: var(--display-large);
+                color: var(--content-primary);
+                text-transform: uppercase;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 3.6rem;
+
+            .info-explanation {
+                display: flex;
+                gap: 0.8rem;
+
+                svg > path {
+                    stroke: var(--content-brand);
+                }
+
+                .info-explanation-text {
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+
+                    h5 {
+                        font: var(--p-medium);
+                        color: var(--content-brand);
+                    }
+
+                    p {
+                        font: var(--p-small);
+                        color: var(--content-secondary);
+                    }
+                }
+            }
+        }
+    }
+}
