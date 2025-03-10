@@ -18,9 +18,11 @@
     --display-small: 700 3.2rem/130% var(--font-sora);
 
     --overline: 700 1.6rem/150% var(--font-roboto-mono);
+    --result-number: 800 4.8rem/150% var(--font-roboto-mono);
 
     --p-large: 500 1.6rem/150% var(--font-roboto-flex);
     --p-medium: 500 1.4rem/150% var(--font-roboto-flex);
+    --p-medium-var: 1.6rem/150% var(--font-roboto-flex);
     --p-small: 500 1.2rem/150% var(--font-roboto-flex);
     --label-medium: 700 2rem/150% var(--font-roboto-flex);
     --label-small: 700 1.6rem/150% var(--font-roboto-flex);
