@@ -260,6 +260,7 @@ main {
         align-items: center;
         justify-content: center;
         gap: 4rem;
+        transition: all 0.5s ease-in-out;
 
         .result-title {
             display: flex;
@@ -290,9 +291,11 @@ main {
                 justify-content: center;
                 padding: 1.8rem;
                 border-radius: 2.8rem;
+                animation: resultAnimation 2s ease;
 
                 h2 {
                     font: var(--result-number);
+                    animation: fadeAnimation 1.3s ease;
                 }
             }
         }
@@ -335,5 +338,30 @@ main {
     }
     100% {
         background-position: 100% 50%;
+    }
+}
+
+@keyframes resultAnimation {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+        rotate: 360deg;
+    }
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
